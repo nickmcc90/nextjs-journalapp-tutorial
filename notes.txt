@@ -32,3 +32,16 @@ to see changes from remote.
 Continue on with youtube video https://www.youtube.com/watch?v=cYGAPVUtQ-U 
 <6:12>
 
+(I just made a new branch for the next batch of notes below)
+Right now we are in a 'actual-init-app' branch.
+
+Starting up next.js app environment
+1. Go to npx create-next-app@latest
+1a. Press enter
+1b. Go through the instructions.. for this app...
+1c. Make a random name. (we will move everything out of this folder into our
+current folder anyway)
+1d. Choose no typescript, yes eslint, yes react compiler, yes tailwind, no src/, yes app
+router, no import alias.
+2. npm run dev
+<timestamp: 7:33>
