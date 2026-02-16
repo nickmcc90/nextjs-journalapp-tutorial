@@ -21,6 +21,7 @@ check git-tutorial / help3branchingmerging.txt for deleting unwanted commits.
 9. Then we go to github and the repo, and click the green pull req button.
 10. Make a detailed comment explaining what's been done in the work
 11. Merge the pull req in github.
+11a. You can delete the branch now.
 12. Sync these changes into local.
 13. If you are in the branch in the terminal, that's fine. Type...
 13b. git fetch 
