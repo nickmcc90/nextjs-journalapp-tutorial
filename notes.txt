@@ -1,1 +1,20 @@
 I am using notes.txt within my hobbingbroach repo to get github started!
+
+I want to publish to branches to make this more real like I'm in a team, so
+I'm going to have good notes to do so here from my other notes in 
+--git-tutorial / help3branchingmerging.txt
+
+Making branches
+1. cd to your project name folder.
+2. git branch 'branch-name'
+3. Check that it made it with... git log --all --graph
+3a. You'll see an arrow pointing to main, bc we are in the main branch.
+4. Switch to the branch with git checkout 'branch-name'
+4a. Arrow should be pointing to new branch now.
+5. We can make commits on this branch. 
+6. I recommend going to my notes in github below.....
+6b. There, I detail doing branches as a workflow with github
+like I'm on a team.
+***
+check git-tutorial / help3branchingmerging.txt for deleting unwanted commits.
+***
