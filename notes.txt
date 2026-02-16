@@ -12,9 +12,18 @@ Making branches
 4. Switch to the branch with git checkout 'branch-name'
 4a. Arrow should be pointing to new branch now.
 5. We can make commits on this branch. 
-6. I recommend going to my notes in github below.....
-6b. There, I detail doing branches as a workflow with github
-like I'm on a team.
 ***
 check git-tutorial / help3branchingmerging.txt for deleting unwanted commits.
 ***
+6. git add . a new commit to this branch
+7. git log to see it worked
+8. git push origin 'branch-name' to push branch commits to repo
+9. Then we go to github and the repo, and click the green pull req button.
+10. Make a detailed comment explaining what's been done in the work
+11. Merge the pull req in github.
+12. Sync these changes into local.
+13. If you are in the branch in the terminal, that's fine. Type...
+13b. git fetch 
+13c. git log --all --graph
+to see changes from remote.
+14. Switch to branch and type git pull origin main
