@@ -28,3 +28,7 @@ check git-tutorial / help3branchingmerging.txt for deleting unwanted commits.
 13c. git log --all --graph
 to see changes from remote.
 14. Switch to branch and type git pull origin main
+
+Continue on with youtube video https://www.youtube.com/watch?v=cYGAPVUtQ-U 
+<6:12>
+
