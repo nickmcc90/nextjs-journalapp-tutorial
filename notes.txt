@@ -57,5 +57,19 @@ Starting up next.js app environment
 5. Now it's time to install shadcn. What does it do?
    5a. It has prebuilt components for us to use.
    5b. Go to shadcn.com
-   5c.
+   5c. Get started -> installation -> next.js
+   5d. Follow the directions (go to the npm code option). Requires vs code terminal.
+   5e. Shadcn is installed. You'll see a new 'lib' folder.
 <timestamp: 8:50>
+6. Let's try to add a button. We need to run the code from the directions in
+the terminal, then copy paste some code from the directions into page.js.
+   6a. You'll see a new 'components' folder get installed when you run the 
+   code from the shadcn directions for a button.
+   6b. Go to page.js and paste the component code. It's basically just an import
+   statement at the top, with custom tag capitalization usage <Button></Button>
+7. If you look inside button.jsx, you'll see it just uses tailwindCSS to get different
+variants. Pretty cool. You can create your own custom variants here.
+8. Let's make a custom one.
+   8a. Make a 'journal: bg-orange-600 hover:bg-orange-700 text-white shadow' inside the
+   'variant' which is inside the 'variants' object.
+<timestamp: 12:14>
