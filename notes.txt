@@ -73,3 +73,62 @@ variants. Pretty cool. You can create your own custom variants here.
    8a. Make a 'journal: bg-orange-600 hover:bg-orange-700 text-white shadow' inside the
    'variant' which is inside the 'variants' object.
 <timestamp: 12:14>
+9. Add the 'journal' variant to your button tag using tailwind text.
+   9a. <Button variant='journal'></Button>
+10. Let's install a couple more components so we don't have to install
+them later.
+   10a. Type in vs code terminal npx shadcn@latest add accordion alert-dialog badge
+   calendar card carousel dialog input popover skeleton sonner textarea
+   10b. Things will install.
+   10c. Don't override anything if you spawn in a component you already made.
+
+<********************************>
+<----------->
+QUICK NEXT.JS LESSON
+<----------->
+
+In layout.js, our entire app exists within the {children} area. {children} is wrapped in styling
+all around it in the layout.js area.
+
+<********************************>
+
+11. Within layout.js, you can change the metadata to our project name and stuff, and you
+can import fonts. Just delete the fonts in the layout.js 
+and import a new one.
+   11a. He imported a new one with the langauge:
+   import { Inter } from 'next/font/google'
+
+   const inter = Inter({ subsets: ["latin"] })
+12. After that, this guy adds a header tag and a single div tag to the layout.js.
+He likes proper semantics.
+   12a. <body className={`${inter.className}`}>
+        <div />
+        <header></header>
+          <main>{children}</main>
+        </body>
+   12b. I don't really get the {``} stuff there in 12a.
+13. Delete the .svg images in the public folder, we don't need them. We can
+grab our own images. Go grab a background and save it in the public folder. Grab
+a logo too.
+14. We can make this our background by modifying the single div we made in step 12a
+with tailwindcss.
+   14a. <div className="bg-[url('/chill-bg.jpeg')] opacity-50 fixed -z-10 inset-0 bg-cover" />
+   14b. The -z sets the bg to be behind everything else.
+   14c. Inset-0 acts like a top-0 bottom-0 left-0 and right-0 all in one.
+   14d. Don't use the same "" '' to wrap the tailwindcss. Use different ones.
+   14e. bg-cover allows your image to cover the whole bg proportionally to your screen.
+<timestamp: 16:51. We are about to add a footer to the page.
+15. Underneath the <main></main>, we will put a footer.
+   15a. <footer className='bg-purple-300 py-12 opacity-10'>
+          <div>
+            <p>Made with love by Nick M.</p>
+          </div>
+        </footer> 
+   15b. Adding 'min-h-screen' to the main tag will put this footer to the bottom instantly.
+   15c. We want our footer text to be in the center, so we put tailwind on the div in our footer
+   like so...
+        <div className='mx-auto px-4 text-center text-gray-900></div>
+   15d. The mx-auto is to have the div be in the middle. Putting the text in the middle is done
+   by text-center.
+<timestamp: 17:53.>
+16.

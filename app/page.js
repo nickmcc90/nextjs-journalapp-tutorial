@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       Subscribe to me yo!
       <br />
-      <Button>Subscribe</Button>
+      <Button variant='journal'>Subscribe</Button>
     </div>
   );
 }
