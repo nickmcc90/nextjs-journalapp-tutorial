@@ -131,4 +131,65 @@ with tailwindcss.
    15d. The mx-auto is to have the div be in the middle. Putting the text in the middle is done
    by text-center.
 <timestamp: 17:53.>
-16.
+16. Now it's time to work on the header. Make a new file header component. Be sure not to put the header.jsx
+into the ui folder; put it in the components folder. 
+   16a. Type in 'rafce' and hit enter to get the template for the jsx component into the space.
+   16b. Tidy up the page to have, in the return statement, a div over a nav over a Link tab. 
+   Make sure to have the import to link library at the top.
+   16c. Include href with link (shown in 16final.) and put in an <Image /> tab. Import image from
+   next.js at the top. Include src to a file path, alt, and width and height.
+   16d. tailwind in the image tag.... w-auto sets a reasonable width for whatever height you put.
+   Object-contain scales image to fit in the container while keeping the aspect ratio.
+   16final.   import Link from 'next/link'
+              import React from 'react'
+
+              const Header = () => {
+                return (
+                  <header>
+                    <nav>
+                      <Link href={"/"}>
+                        <Image
+                          src={"/da-logo.jpeg"} alt="rock logo" width={200} height={60}
+                          className="h-10 w-auto object-contain"
+                        />
+                      </Link>
+                    </nav>
+                  </header>
+                )
+              }
+
+              export default header
+    16e. Put the header tag inside of layout.js above the <main> tag. It should look like this.
+    Also be sure to import Header at top of layout.js.
+        export default function RootLayout({ children }) {
+          return (
+            <html lang="en">
+              <body className={`${inter.className}`}>
+                <div className="bg-[url('/chill-bg.jpeg')] opacity-50 fixed -z-10 inset-0 bg-cover" />
+                <Header />
+                <main className='min-h-screen'>{children}</main>
+                <footer className='bg-purple-300 py-12 bg-opacity-10'>
+                  <div className='mx-auto px-4 text-center text-gray-900'>
+                    <p>Made with love by Nick M.</p>
+                  </div>
+                </footer>
+              </body>
+            </html>
+          );
+        }
+    16f. Next, style the header tag inside the header.jsx. Giving a className of 'container'
+    in tailwindcss gives nice properities for different size screens. Putting mx-auto with this
+    will keep the container placed well.
+    16g. Let's add styling to the nav tab in the header.jsx. Give it py-6 px-4 flex
+    justify-between and items-center. We will have multiple things inside the nav tab. We want
+    the two groups (Link tag and a div tag to hold the other things) inside the nav to be 
+    separated to the far ends of the screen, so we use set a flex and use justify-between. 
+    Items-center aligns the items vertically in the nav box.
+    16h. Create a div next to the link tag in the nav tag. This will be where we put the login
+    buttons and other things. Put flex items-center and gap-4 on it.
+
+
+***********
+USER AUTHENTICATION
+***********
+<timestamp: 20:45>
